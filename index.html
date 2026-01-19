@@ -253,21 +253,7 @@ At that time, I wasn’t very close to you, but slowly, day by day, I felt like 
     close.addEventListener('click', function () {
         boxmail.classList.remove('active')
     })
-    let audio = document.getElementById("myAudio");
-    audio.volume = 0.5; // optional (soft music)
-
-    function playAudioOnce() {
-        audio.play().catch(() => {
-            console.log("Autoplay blocked");
-        });
-
-        document.removeEventListener("click", playAudioOnce);
-        document.removeEventListener("touchstart", playAudioOnce);
-    }
-
-    // Play on first user interaction ANYWHERE
-    document.addEventListener("click", playAudioOnce);
-    document.addEventListener("touchstart", playAudioOnce);
+   
 </script>
 
 </html>
